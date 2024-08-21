@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Add New Project</h2>
+<form method="POST">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="author">Author:</label>
+    <input type="text" id="author" name="author" required>
+
+    <label for="genre">Genre:</label>
+    <input type="text" id="genre" name="genre" required>
+
+    <label for="logline">Logline:</label>
+    <textarea id="logline" name="logline" required></textarea>
+
+    <label for="synopsis">Synopsis:</label>
+    <textarea id="synopsis" name="synopsis" required></textarea>
+
+    <label for="status">Status:</label>
+    <input type="text" id="status" name="status" required>
+
+    <label for="production_date">Production Date:</label>
+    <input type="date" id="production_date" name="production_date">
+
+    <button type="submit">Add Project</button>
+</form>
+{% endblock %}

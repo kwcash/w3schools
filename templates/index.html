@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Project List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Status</th>
+            <th>Production Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for project in projects %}
+        <tr>
+            <td>{{ project.title }}</td>
+            <td>{{ project.author }}</td>
+            <td>{{ project.genre }}</td>
+            <td>{{ project.status }}</td>
+            <td>{{ project.production_date.strftime('%Y-%m-%d') if project.production_date else 'N/A' }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
