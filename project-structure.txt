@@ -1,0 +1,19 @@
+project_root/
+│
+├── app.py
+├── database.py
+├── requirements.txt
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+│
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   └── list.html
+│
+└── instance/
+    └── lists.db
